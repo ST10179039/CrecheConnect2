@@ -1,0 +1,26 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+     "skipLibCheck": true,
+    "types": ["react", "react-native","expo","expo-router"],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "workbox-config.js",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
